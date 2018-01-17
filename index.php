@@ -10,7 +10,7 @@
     font-family: monospace;
   }
   .github-fork-ribbon.right-top::before {
-    background-color: #090;
+    background-color: #333;
   }
   </style>
 </head>
