@@ -21,8 +21,8 @@
               isset($_POST["sonderzeichen"])) {
 
               // Variablen Initialisieren
-              $menge = $_POST["menge"];          
-              $laenge = $_POST["laenge"];
+              $menge = (int)$_POST["menge"];          
+              $laenge = (int)$_POST["laenge"];
               $characters = "";
               $output = array();
 
@@ -80,13 +80,13 @@
              min="1" 
              step="1"
              name="laenge"
-             value="<?= $_POST["laenge"]; ?>"><br />
+             value="<?= (int)$_POST["laenge"]; ?>"><br />
       Anzahl der Passw&ouml;rter:<br />       
       <input type="number"
              min="1"
              step="1"
              name="menge"
-             value="<?= $_POST["menge"]; ?>">       
+             value="<?= (int)$_POST["menge"]; ?>">       
       <br /><br />        
       <input type="submit"
              name="submit"
